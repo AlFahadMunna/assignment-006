@@ -1,7 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
-  const cart = 6;
+const Navbar = ({ cart }) => {
   return (
     <div className="shadow-sm">
       <div className="navbar bg-base-100 w-full container mx-auto gap-4">
@@ -91,7 +90,7 @@ const Navbar = () => {
                 />{" "}
               </svg>
               {cart.length > 0 && (
-                <span className="badge badge-sm indicator-item">
+                <span className="badge badge-sm indicator-item bg-red-400 rounded-full">
                   {cart.length}
                 </span>
               )}
