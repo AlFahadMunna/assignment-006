@@ -45,7 +45,7 @@ const Products = ({ product, cart, setCart }) => {
             {tag}
           </span>
           <span className="w-15 h-15 p-4 border rounded-full border-gray-200">
-            <img src={`/src/assets/products/${icon}.png`} alt="design tool" />
+            <img src={`/products/${icon}.png`} alt="design tool" />
           </span>
 
           <div className="">
