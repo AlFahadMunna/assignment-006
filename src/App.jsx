@@ -6,6 +6,7 @@ import Stat from "./components/Stat";
 import { ToastContainer } from "react-toastify";
 import Steps from "./components/Steps";
 import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 const getProducts = async () => {
   const res = await fetch("/products.json");
@@ -23,6 +24,7 @@ function App() {
       <Digital productPromise={productPromise} cart={cart} setCart={setCart} />
       <Steps />
       <Pricing />
+      <Footer />
       <ToastContainer />
     </>
   );
