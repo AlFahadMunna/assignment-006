@@ -1,5 +1,9 @@
 import React from "react";
 
+import userImg from "/src/assets/user.png";
+import packageImg from "/src/assets/package.png";
+import rocketImg from "/src/assets/rocket.png";
+
 const Steps = () => {
   return (
     <div className="bg-[#F9FAFC] h-[762px] w-full">
@@ -19,7 +23,7 @@ const Steps = () => {
               01
             </span>
             <div className="w-25 h-25 bg-purple-100 rounded-full flex justify-center items-center">
-              <img src={"/src/assets/user.png"} alt="step-1" />
+              <img src={userImg} alt="step-1" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900">Create Account</h2>
             <p className="text-gray-500">
@@ -32,7 +36,7 @@ const Steps = () => {
               02
             </span>
             <div className="w-25 h-25 bg-purple-100 rounded-full flex justify-center items-center">
-              <img src={"/src/assets/package.png"} alt="step-1" />
+              <img src={packageImg} alt="step-1" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900">
               Choose Products
@@ -46,7 +50,7 @@ const Steps = () => {
               03
             </span>
             <div className="w-25 h-25 bg-purple-100 rounded-full flex justify-center items-center">
-              <img src={"/src/assets/rocket.png"} alt="step-1" />
+              <img src={rocketImg} alt="step-1" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900">Start Creating</h2>
             <p className="text-gray-500">
