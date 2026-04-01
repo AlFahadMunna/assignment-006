@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Stat from "./components/Stat";
 import { ToastContainer } from "react-toastify";
 import Steps from "./components/Steps";
+import Pricing from "./components/Pricing";
 
 const getProducts = async () => {
   const res = await fetch("/products.json");
@@ -20,8 +21,8 @@ function App() {
       <Hero />
       <Stat />
       <Digital productPromise={productPromise} cart={cart} setCart={setCart} />
-
       <Steps />
+      <Pricing />
       <ToastContainer />
     </>
   );
